@@ -339,16 +339,16 @@ bool Compare(VaccinationData* vac1, VaccinationData* vac2) {//Method for vector 
 	{
 		if(vac1->GetAge()==vac2->GetAge())
 		{
-			return name1 < name2;
+			return name1 < name2;//name: Climbing order
 		}
 		else
 		{
-			return vac1->GetAge()<vac2->GetAge();
+			return vac1->GetAge()<vac2->GetAge();//Age: Climbing order
 		}
 	}
 	else
 	{
-		return Vname1<Vname2;
+		return Vname1<Vname2;//Vaccine name: Climbing order
 	}
 }
 
@@ -389,40 +389,40 @@ bool Compare2(VaccinationData* vac1, VaccinationData* vac2) {//Method for vector
 	{
 		if(vac1->GetAge()==vac2->GetAge())
 		{
-			return name1 < name2;
+			return name1 < name2;//name: Climbing order
 		}
 		else
 		{
-			return vac1->GetAge() > vac2->GetAge();
+			return vac1->GetAge() > vac2->GetAge();//Age: decending order
 		}
 	}
 	else
 	{
-		return Lname1<Lname2;
+		return Lname1<Lname2;//Location name: Climbing order
 	}
 }
 
-bool Manager::VPRINT(string type_) {
-	if(avl->isEmpty()==true)
+bool Manager::VPRINT(string type_) {//print all Data of Vector
+	if(avl->isEmpty()==true)//if AVL tree is empty, return false
 	{
 		return false;
 	}
 	ofstream fout;
 	fout.open("log.txt", ofstream::app);
-	if(type_.compare("A")==0)
+	if(type_.compare("A")==0)//if type_ is "A", print Data according to the rules
 	{
 		fout << "========== " << "VPRINT A" << " ==========" << endl;
-		sort(Print_vector.begin(), Print_vector.end(),Compare);
-		for(int i=0;i<Print_vector.size();i++)
+		sort(Print_vector.begin(), Print_vector.end(),Compare);//sort data of Vector according to the rules
+		for(int i=0;i<Print_vector.size();i++)//print data of vector 
 		{
 			fout<<Print_vector[i]->GetUserName()<<" "<<Print_vector[i]->GetVaccineName()<<" "<<Print_vector[i]->GetTimes()<<" "<<Print_vector[i]->GetAge()<<" "<<Print_vector[i]->GetLocationName()<<endl;
 		}
 	}
-	else if(type_.compare("B")==0)
+	else if(type_.compare("B")==0)//if type_ is "B", print Data according to the rules
 	{
 		fout << "========== " << "VPRINT B" << " ==========" << endl;
-		sort(Print_vector.begin(), Print_vector.end(),Compare2);
-		for(int i=0;i<Print_vector.size();i++)
+		sort(Print_vector.begin(), Print_vector.end(),Compare2);//sort data of Vector according to the rules
+		for(int i=0;i<Print_vector.size();i++)//print data of vector 
 		{
 			fout<<Print_vector[i]->GetUserName()<<" "<<Print_vector[i]->GetVaccineName()<<" "<<Print_vector[i]->GetTimes()<<" "<<Print_vector[i]->GetAge()<<" "<<Print_vector[i]->GetLocationName()<<endl;
 		}		
@@ -432,7 +432,7 @@ bool Manager::VPRINT(string type_) {
 	return true;
 }
 
-void Manager::printErrorCode(int n) {
+void Manager::printErrorCode(int n) {//Method for print error code
 	ofstream fout;
 	fout.open("log.txt", ofstream::app);
 	fout << "========== ERROR ==========" <<endl;
@@ -441,7 +441,7 @@ void Manager::printErrorCode(int n) {
 	fout.close();
 }
 
-void Manager::printSuccess(char* act)
+void Manager::printSuccess(char* act)//Method for print success code
 {
 	ofstream fout;
 	fout.open("log.txt", ofstream::app);
@@ -451,7 +451,7 @@ void Manager::printSuccess(char* act)
 	fout.close();
 }
 
-bool Manager::CheckNum(char* str){
+bool Manager::CheckNum(char* str){//Method check wrong data
     if(str[0]=='0')
     {
         return false;
