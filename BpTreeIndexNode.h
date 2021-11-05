@@ -8,8 +8,6 @@ private:
 	
 public:
 	BpTreeIndexNode(){}
-	~BpTreeIndexNode() {}
-
 	void insertIndexMap(string n, BpTreeNode* pN){
 		mapIndex.insert(map<string, BpTreeNode*>::value_type(n, pN));
 	}

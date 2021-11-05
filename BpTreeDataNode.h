@@ -11,8 +11,8 @@ private:
 
 public:
 	BpTreeDataNode(){
-	}
-	~BpTreeDataNode(){
+		pNext=nullptr;
+		pPrev=nullptr;
 	}
 	void setNext(BpTreeNode* pN){pNext = pN;}
 	void setPrev(BpTreeNode* pN){pPrev = pN;}
@@ -26,7 +26,7 @@ public:
 	void deleteMap(string n){
 		mapData.erase(n);
 	}
-	map<string, VaccinationData*> *getDataMap(){return &mapData;}
+	map<string, VaccinationData*>* getDataMap(){return &mapData;}
 };
 
 #endif

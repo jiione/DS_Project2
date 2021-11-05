@@ -13,9 +13,9 @@ private:
 
 public:
 	AVLNode(){
-		pRight = NULL;
-		pLeft = NULL;
-		pVaccinationData = NULL;
+		pRight = nullptr;
+		pLeft = nullptr;
+		pVaccinationData = nullptr;
 		mBF = 0;
 	};
 	~AVLNode(){};

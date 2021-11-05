@@ -12,12 +12,15 @@ private:
 public:
 	
 	AVLTree(){
-		root=NULL;
+		root=nullptr;
 	}
-	~AVLTree(){};
+	~AVLTree();
 	bool		Insert(VaccinationData* pVac);
-	VaccinationData*	Search(int id);
+	VaccinationData*	Search(string name);
 	void GetVector(vector<VaccinationData*>& v);
+	bool isEmpty(){return root==nullptr;}
+	void Delete(AVLNode* node);
+	int Compare(string str1, string str2);
 };
 
 #endif

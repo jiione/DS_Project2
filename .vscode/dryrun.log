@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/user/DS_Project_2_2021_2'
+g++ -std=c++11 -g -o run AVLTree.cpp BpTree.cpp Manager.cpp main.cpp AVLNode.h BpTree.h Manager.h BpTreeNode.h BpTreeIndexNode.h BpTreeDataNode.h AVLTree.h VaccinationData.h
+make: Leaving directory '/home/user/DS_Project_2_2021_2'
+ 
