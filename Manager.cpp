@@ -30,6 +30,8 @@ void Manager::run(const char* command_txt) {
         }
         if(strcmp(tmp, "LOAD") == 0)//if tmp is "LOAD"
 		{
+			char* Lcmd = strtok(NULL," ");
+			if(Lcmd!=NULL){printErrorCode(100); continue;}//if parameter is exceed, print error code
 			if(LOAD())//call Load method
 			{
 				printSuccess("LOAD");//if Method success, print success code 
@@ -41,6 +43,8 @@ void Manager::run(const char* command_txt) {
 		}
 		else if(strcmp(tmp,"VLOAD")== 0)//if tmp is "VLOAD"
 		{
+			char* VLcmd = strtok(NULL," ");
+			if(VLcmd!=NULL){printErrorCode(200); continue;}//if parameter is exceed, print error code
 			if(VLOAD())//call VLOAD method
 			{
 				printSuccess("VLOAD");//if Method success, print succenss code 
@@ -61,6 +65,8 @@ void Manager::run(const char* command_txt) {
 			if(age==NULL) {printErrorCode(300); continue;}//if age's a wrong command, print error code
 			char* location = strtok(NULL," ");
 			if(location==NULL) {printErrorCode(300); continue;}//if location's a wrong command, print error code
+			char* Acmd= strtok(NULL," ");
+			if(Acmd!=NULL){printErrorCode(300); continue;}//if parameter is exceed, print error code
 			if(CheckNum(age)==false)//if age is not number
 			{
 				printErrorCode(300);//print error code
@@ -77,6 +83,8 @@ void Manager::run(const char* command_txt) {
 			char* cmd1= strtok(NULL," ");
 			if(cmd1==NULL){printErrorCode(400); continue;}//If the data is wrong, the error code is output
 			char* cmd2= strtok(NULL," ");
+			char* cmd3 = strtok(NULL," ");
+			if(cmd3!=NULL){printErrorCode(400); continue;}//if parameter is exceed, print error code
 			if(cmd1!=NULL && cmd2!=NULL)
 			{
 				if(!SEARCH_BP(cmd1,cmd2))//calling a SEARCH_BP method
@@ -100,6 +108,8 @@ void Manager::run(const char* command_txt) {
 		else if(strcmp(tmp,"SEARCH_AVL")== 0)//tmp is "SEARCH_AVL"
 		{
 			char* name = strtok(NULL," ");
+			char* SAcmd = strtok(NULL," ");
+			if(SAcmd!=NULL){printErrorCode(500); continue;}//if parameter is exceed, print error code
 			if(name==NULL)//if it is wrong command, print error code
 			{
 				printErrorCode(500);
@@ -112,17 +122,21 @@ void Manager::run(const char* command_txt) {
 		else if(strcmp(tmp,"VPRINT")== 0)//tmp is "VPRINT"
 		{
 			char* cmd = strtok(NULL," ");
+			char* VPcmd = strtok(NULL," ");
+			if(VPcmd!=NULL){printErrorCode(600); continue;}//if parameter is exceed, print error code
 			if(cmd==NULL)//if it wrong command, print error code
 			{
-				printErrorCode(700);
+				printErrorCode(600);
 			}
 			else if(!VPRINT(cmd))//calling SEARCH_AVL method
 			{
-				printErrorCode(700);//if method fails, print error code
+				printErrorCode(600);//if method fails, print error code
 			}
 		}
 		else if(strcmp(tmp,"PRINT_BP")== 0)//if tmp is "PRINT_BP"
 		{
+			char* PBcmd = strtok(NULL," ");
+			if(PBcmd!=NULL){printErrorCode(700); continue;}//if parameter is exceed, print error code
 			if(bp->isEmpty()==true)//if B+ tree is Empty, print error code
 			{
 				printErrorCode(700);
@@ -256,6 +270,10 @@ bool Manager::ADD(char* name, char* Vname, int age, char* location) {//insert da
 }
 
 bool Manager::SEARCH_BP(string name) {//Find the data in the tree with name
+	if(bp->isEmpty()==true)//if tree is empty, return false
+	{
+		return false;
+	}
 	BpTreeNode* tmpNode = bp->searchDataNode(name);//tmpnode that has name information in B+ tree
 	if(tmpNode==nullptr)//if it not exist Data
 	{
@@ -279,6 +297,10 @@ bool Manager::SEARCH_BP(string name) {//Find the data in the tree with name
 }
 
 bool Manager::SEARCH_BP(string start, string end) {//print Node's VaccineData in charactor's range
+	if(bp->isEmpty()==true)//if tree is empty, return false
+	{
+		return false;
+	}
 	if(start[1]!='\0'||end[1]!='\0')//if start and end are not Alphabat
 	{
 		return false;
@@ -289,6 +311,10 @@ bool Manager::SEARCH_BP(string start, string end) {//print Node's VaccineData in
 
 bool Manager::SEARCH_AVL(string name) {//Find the data in the tree with name
 	VaccinationData* v = avl->Search(name);//v that has name information in AVL tree
+	if(avl->isEmpty()==true)//if avl is Empty, return false
+	{
+		return false;
+	}
 	if(v==nullptr)//if can't find data, return false
 	{
 		return false;
@@ -404,6 +430,10 @@ bool Compare2(VaccinationData* vac1, VaccinationData* vac2) {//Method for vector
 
 bool Manager::VPRINT(string type_) {//print all Data of Vector
 	if(avl->isEmpty()==true)//if AVL tree is empty, return false
+	{
+		return false;
+	}
+	if(Print_vector.empty()==true)//if Print_vector is empty, return false
 	{
 		return false;
 	}
