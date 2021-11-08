@@ -1,4 +1,5 @@
 LOAD
+VPRINT
 VLOAD
 PRINT_BP
 ADD jam pfizer 65 15 Seoul
@@ -17,6 +18,18 @@ ADD Ham Pfizer 65 Incheon
 ADD Bobby Moderna 20 Seoul
 ADD Teddy AstraZeneca 19 Incheon
 ADD Bob Janssen 48 Daegu
+ADD Ann Janssen 21 Seoul
+ADD Ami Janssen 25 Seoul
+ADD Jinks Janssen 21 Seoul
+ADD Set Janssen 30 Seoul
+ADD Geng Janssen 21 Seoul
+ADD Yumi Janssen 29 Seoul
+ADD Garen Janssen 29 Seoul
+ADD Kamil Janssen 30 Seoul
+ADD Lux Janssen 22 Seoul
+ADD Vi Janssen 14 Seoul
+ADD Ari Janssen 34 Seoul
+ADD Nidali Janssen 50 Seoul
 SEARCH_BP Bobby
 SEARCH_BP Denny
 SEARCH_BP Elsa
@@ -29,6 +42,8 @@ SEARCH_BP Teddy
 SEARCH_BP Tom
 SEARCH_BP Jin
 SEARCH_BP Minsun
+VPRINT A
+VPRINT B
 VLOAD
 VPRINT A
 VPRINT B

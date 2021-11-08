@@ -114,11 +114,11 @@ void Manager::run(const char* command_txt) {
 			char* cmd = strtok(NULL," ");
 			if(cmd==NULL)//if it wrong command, print error code
 			{
-				printErrorCode(700);
+				printErrorCode(600);
 			}
 			else if(!VPRINT(cmd))//calling SEARCH_AVL method
 			{
-				printErrorCode(700);//if method fails, print error code
+				printErrorCode(600);//if method fails, print error code
 			}
 		}
 		else if(strcmp(tmp,"PRINT_BP")== 0)//if tmp is "PRINT_BP"
@@ -256,6 +256,10 @@ bool Manager::ADD(char* name, char* Vname, int age, char* location) {//insert da
 }
 
 bool Manager::SEARCH_BP(string name) {//Find the data in the tree with name
+	if(bp->isEmpty()==true)//if tree is empty, return false
+	{
+		return false;
+	}
 	BpTreeNode* tmpNode = bp->searchDataNode(name);//tmpnode that has name information in B+ tree
 	if(tmpNode==nullptr)//if it not exist Data
 	{
@@ -279,6 +283,10 @@ bool Manager::SEARCH_BP(string name) {//Find the data in the tree with name
 }
 
 bool Manager::SEARCH_BP(string start, string end) {//print Node's VaccineData in charactor's range
+	if(bp->isEmpty()==true)//if tree is empty, return false
+	{
+		return false;
+	}
 	if(start[1]!='\0'||end[1]!='\0')//if start and end are not Alphabat
 	{
 		return false;
@@ -289,6 +297,10 @@ bool Manager::SEARCH_BP(string start, string end) {//print Node's VaccineData in
 
 bool Manager::SEARCH_AVL(string name) {//Find the data in the tree with name
 	VaccinationData* v = avl->Search(name);//v that has name information in AVL tree
+	if(avl->isEmpty()==true)//if avl is Empty, return false
+	{
+		return false;
+	}
 	if(v==nullptr)//if can't find data, return false
 	{
 		return false;
@@ -404,6 +416,10 @@ bool Compare2(VaccinationData* vac1, VaccinationData* vac2) {//Method for vector
 
 bool Manager::VPRINT(string type_) {//print all Data of Vector
 	if(avl->isEmpty()==true)//if AVL tree is empty, return false
+	{
+		return false;
+	}
+	if(Print_vector.empty()==true)//if Print_vector is empty, return false
 	{
 		return false;
 	}

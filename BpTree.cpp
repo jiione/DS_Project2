@@ -138,7 +138,7 @@ void BpTree::splitDataNode(BpTreeNode* pDataNode) {
     pDataNode->setPrev(LcNode);
     LcNode->setNext(pDataNode);
 
-    if(exceedIndexNode(parent)==true)
+    if(exceedIndexNode(parent)==true)//if parent of parent exceed, split index node
     {
         splitIndexNode(parent);
     }
