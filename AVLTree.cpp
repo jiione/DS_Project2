@@ -19,15 +19,15 @@ bool AVLTree::Insert(VaccinationData* pVac){
             a=p;
             pa=pp;
         }
-        if(Compare(pVac->GetUserName(),p->getVacData()->GetUserName())<0)
+        if(Compare(pVac->GetUserName(),p->getVacData()->GetUserName())<0)//Compare Vaccine Data's user name and tree Data's user name
         {
             pp=p;
-            p=p->getLeft();
+            p=p->getLeft();//if tree data's user name > vaccine data's user name
         }
-        else if(Compare(pVac->GetUserName(),p->getVacData()->GetUserName())>0)
+        else if(Compare(pVac->GetUserName(),p->getVacData()->GetUserName())>0)//Compare Vaccine Data's user name and tree Data's user name
         {
             pp=p;
-            p=p->getRight();
+            p=p->getRight();//if tree data's user name < vaccine data's user name
         }
         else
         {
@@ -36,7 +36,7 @@ bool AVLTree::Insert(VaccinationData* pVac){
     }
     AVLNode* newNode = new AVLNode;//create new AVLNode
     newNode->setVacData(pVac);
-    if(Compare(pVac->GetUserName(),pp->getVacData()->GetUserName())<0)
+    if(Compare(pVac->GetUserName(),pp->getVacData()->GetUserName())<0)//compare Vaccine Data and parent data, and insert New data
     {
         pp->setLeft(newNode);//insert as left child
     }
@@ -45,11 +45,11 @@ bool AVLTree::Insert(VaccinationData* pVac){
         pp->setRight(newNode);//insert as right child
     }
 
-    int d;
+    int d;//number for BF
     AVLNode* b;//child of a
     AVLNode* c;//child of b
 
-    if(Compare(pVac->GetUserName(),a->getVacData()->GetUserName())>0)
+    if(Compare(pVac->GetUserName(),a->getVacData()->GetUserName())>0)//When the node is tilted to one side
     {
         b=p=a->getRight();
         d=-1;
@@ -160,10 +160,10 @@ bool AVLTree::Insert(VaccinationData* pVac){
     return true;
 }
 
-void AVLTree::GetVector(vector<VaccinationData*>& v){
+void AVLTree::GetVector(vector<VaccinationData*>& v){//insert AVL tree's data in Vector
     queue<AVLNode*> q;
     AVLNode* currNode=root;
-    while(currNode)
+    while(currNode)//Save data by level using queue
     {
         v.push_back(currNode->getVacData());
         if(currNode->getLeft())
@@ -183,7 +183,7 @@ void AVLTree::GetVector(vector<VaccinationData*>& v){
     }
 }
 
-VaccinationData* AVLTree::Search(string name){
+VaccinationData* AVLTree::Search(string name){//Find the data of the tree with name
     if(root==nullptr)
     {
         return nullptr;
@@ -215,6 +215,7 @@ AVLTree::~AVLTree()
 
 void AVLTree::Delete(AVLNode* node)
 {
+    /*erase AVL tree's data while POST order*/
    if(node == NULL)
     {
         return;
@@ -224,7 +225,7 @@ void AVLTree::Delete(AVLNode* node)
     delete node;
 }
 
-int AVLTree::Compare(string str1, string str2)
+int AVLTree::Compare(string str1, string str2)//Compare strings regardless of case
 {
     for(int i=0;str1[i]!='\0';i++)
     {

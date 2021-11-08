@@ -3,8 +3,8 @@
 
 int main()
 {
-	Manager k(3);
-	k.run("command.txt");
+	Manager k(3);//declare Manager
+	k.run("command.txt");//call run Method of manager
     return 0;
 }
 

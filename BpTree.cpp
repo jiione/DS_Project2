@@ -1,37 +1,37 @@
 #include "BpTree.h"
-bool BpTree::Insert(VaccinationData* newData){
-    if(root == nullptr)
+bool BpTree::Insert(VaccinationData* newData){//insert Data in B+Tree
+    if(root == nullptr)//if tree is empty
     {
         root=new BpTreeDataNode;
         root->insertDataMap(newData->GetUserName(),newData);
         return true;
     }
     BpTreeNode* currNode = root;
-    while(currNode->getMostLeftChild()!=nullptr)//find Data Node
+    while(currNode->getMostLeftChild()!=nullptr)//find data node
     {
-        for(auto it=currNode->getIndexMap()->begin(); it!=currNode->getIndexMap()->end();it++)
+        for(auto it=currNode->getIndexMap()->begin(); it!=currNode->getIndexMap()->end();it++)//search map in the current node and move current Node in the tree
         {
-            if(it->first.compare(newData->GetUserName())>0)
+            if(it->first.compare(newData->GetUserName())>0)//if currNode's data is bigger than new data
             {
                 if(it==currNode->getIndexMap()->begin())
                 {
-                    currNode=currNode->getMostLeftChild();
+                    currNode=currNode->getMostLeftChild();//move currNode to Most left child Node
                     break;
                 }
                 else
                 {
-                    currNode=(--it)->second;
+                    currNode=(--it)->second;//move currnode to middle child node
                     break;
                 }
             }
             else if(it==--(currNode->getIndexMap()->end()))
             {
-                currNode=it->second;
+                currNode=it->second;//move currNode to right child node
                 break;
             }
         }
     }
-    currNode->insertDataMap(newData->GetUserName(),newData);
+    currNode->insertDataMap(newData->GetUserName(),newData);//insert Vaccine Data in the Map
     
     if(exceedDataNode(currNode)==false)
     {
@@ -49,7 +49,7 @@ BpTreeNode * BpTree::searchDataNode(string n) {
         return nullptr;
     }
     BpTreeNode* currNode=root;
-    while(currNode->getMostLeftChild()!=nullptr)//find Data Node
+    while(currNode->getMostLeftChild()!=nullptr)//find Data Node to exist same name
     {
         for(auto it=currNode->getIndexMap()->begin(); it!=currNode->getIndexMap()->end();it++)
         {
@@ -113,10 +113,10 @@ void BpTree::splitDataNode(BpTreeNode* pDataNode) {
     it++;
     parent ->insertIndexMap(it->first,pDataNode);//insert Data in parent Index Node and connect pDataNode
     pDataNode->getDataMap()->erase(pDataNode->getDataMap()->begin());
-    if(parent->getMostLeftChild()==pDataNode)
+    if(parent->getMostLeftChild()==pDataNode)//if pDataNode is parent's Most left child Node
     {
-        parent->setMostLeftChild(LcNode);
-        LcNode->setParent(parent);
+        parent->setMostLeftChild(LcNode);//parent's Most left child Node set new left child Node
+        LcNode->setParent(parent);//new left child node's parent set parent node
     }
     else
     {
@@ -176,7 +176,7 @@ void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
     LcNode->setMostLeftChild(pIndexNode->getMostLeftChild());
     pIndexNode->getMostLeftChild()->setParent(LcNode);
     it++;
-    parent->insertIndexMap(it->first,pIndexNode);
+        parent->insertIndexMap(it->first,pIndexNode);
     pIndexNode->setMostLeftChild(it->second);
     pIndexNode->getIndexMap()->erase(pIndexNode->getIndexMap()->begin());   
     pIndexNode->getIndexMap()->erase(pIndexNode->getIndexMap()->begin());
@@ -197,13 +197,13 @@ void BpTree::splitIndexNode(BpTreeNode* pIndexNode) {
             }
         }
     }
-    if(exceedIndexNode(parent)==true)
+    if(exceedIndexNode(parent)==true)//if exceed Data indexNode
     {
-        splitIndexNode(parent);
+        splitIndexNode(parent);//call split method
     }
 }
 
-bool BpTree::exceedDataNode(BpTreeNode* pDataNode) {
+bool BpTree::exceedDataNode(BpTreeNode* pDataNode) {//check DataNode exceed
     if(pDataNode->getDataMap()->size()<order)
     {
         return false;
@@ -215,7 +215,7 @@ bool BpTree::exceedDataNode(BpTreeNode* pDataNode) {
 
 }
 
-bool BpTree::exceedIndexNode(BpTreeNode* pIndexNode) {
+bool BpTree::exceedIndexNode(BpTreeNode* pIndexNode) {//check IndexNode exceed
     if(pIndexNode->getIndexMap()->size()<order)
     {
         return false;
@@ -226,7 +226,7 @@ bool BpTree::exceedIndexNode(BpTreeNode* pIndexNode) {
     }
 
 }
-bool BpTree::CheckRange(BpTreeNode* node,string start,string end)
+bool BpTree::CheckRange(BpTreeNode* node,string start,string end)//check exist Data in Range
 {
     BpTreeNode* currNode=node;
     while(currNode)
@@ -246,11 +246,11 @@ bool BpTree::CheckRange(BpTreeNode* node,string start,string end)
     return false;
 }
 
-void BpTree::SearchRange(string start, string end) {
+void BpTree::SearchRange(string start, string end) {//print Node's VaccineData in charactor's range
     BpTreeNode* currNode=root;
-    while(currNode->getMostLeftChild()!=nullptr)
+    while(currNode->getMostLeftChild()!=nullptr)//find Data Node
     {
-        for(auto it=currNode->getIndexMap()->begin(); it!=currNode->getIndexMap()->end();it++)
+        for(auto it=currNode->getIndexMap()->begin(); it!=currNode->getIndexMap()->end();it++)//find Data Node's Data of Map
         {
             if(start.front()<=it->first.front())
             {
@@ -271,7 +271,7 @@ void BpTree::SearchRange(string start, string end) {
     }
 	ofstream fout;
 	fout.open("log.txt", ofstream::app);
-    if(CheckRange(currNode,start,end)==false)
+    if(CheckRange(currNode,start,end)==false)//if Data is not exist, print error code
     {
 	    fout << "========== ERROR ==========" <<endl;
 	    fout << 400 << endl;
@@ -285,7 +285,7 @@ void BpTree::SearchRange(string start, string end) {
         {
             if(end.front()<it->first.front())
             {
-                fout << "============================" << endl << endl;
+                fout << "============================" << endl << endl;//if finish to find, print line and return
                 return;
             }
             if(start.front()<=it->first.front())
@@ -300,16 +300,16 @@ void BpTree::SearchRange(string start, string end) {
     fout.close();
 }
 
-void BpTree::Print() {
+void BpTree::Print() {//print all Vaccine Data in B+ Tree
     ofstream fout;
 	fout.open("log.txt", ofstream::app);
     fout << "========== " << "PRINT_BP" << " ==========" << endl;
     BpTreeNode* currNode =root;
-    while(currNode->getMostLeftChild())
+    while(currNode->getMostLeftChild())//Move Most Left Data Node
     {
         currNode=currNode->getMostLeftChild();
     }
-    while(currNode)
+    while(currNode)//print all Data of DataNode and move next data
     {
         for(auto it=currNode->getDataMap()->begin();it!=currNode->getDataMap()->end();it++)
         {
@@ -320,8 +320,8 @@ void BpTree::Print() {
     fout << "============================" << endl << endl;
     fout.close();
 }
-BpTree::~BpTree(){
-    if(root->getMostLeftChild()==nullptr)
+BpTree::~BpTree(){//if delete tree,all node and node's data must be free
+    if(root->getMostLeftChild()==nullptr)//if root is Data Node
     {
         auto it =--(root->getDataMap()->end());
         int s=root->getDataMap()->size();
@@ -333,40 +333,40 @@ BpTree::~BpTree(){
         delete root;
         return;
     }
-    queue<BpTreeNode*> q;
+    queue<BpTreeNode*> q;//delete node using queue for level by level deleted
     BpTreeNode* currNode=root;
     BpTreeNode* deleteNode;
-    while(currNode->getMostLeftChild()!=nullptr)
+    while(currNode->getMostLeftChild()!=nullptr)//first, Delete IndexNode
     {
-        q.push(currNode->getMostLeftChild());
+        q.push(currNode->getMostLeftChild());//push Nodes under the level Node
         for(auto it=currNode->getIndexMap()->begin();it!=currNode->getIndexMap()->end();it++)
         {
             q.push(it->second);
         }
         deleteNode=currNode;
-        currNode=q.front();
+        currNode=q.front();//queue's front is currNode and queue pop
         q.pop();
         deleteNode->getIndexMap()->clear();
         delete deleteNode;
     }
-    auto it =--(currNode->getDataMap()->end());
+    auto it =--(currNode->getDataMap()->end());//currNode is first Data node and delete
     int s=currNode->getDataMap()->size();
-    for(int i=0; i<s;i++)
+    for(int i=0; i<s;i++)//delete all vaccine data of data node
     {
-        delete it->second;
+        delete it->second;//delete vaccine data
         it--;
     }
     currNode->getDataMap()->clear();
     delete currNode;
-    while(q.empty()!=true)
+    while(q.empty()!=true)//delete datas of all data node to move next
     {
         deleteNode = q.front();
         q.pop();
         s=deleteNode->getDataMap()->size();
         auto it =--(deleteNode->getDataMap()->end());
-        for(int i=0; i<deleteNode->getDataMap()->size();i++)
+        for(int i=0; i<deleteNode->getDataMap()->size();i++)//delete all vaccine data of data node
         {
-            delete it->second;
+            delete it->second;//delete vaccine data
             it--;
         }
         deleteNode->getDataMap()->clear();
