@@ -1,24 +1,8 @@
+LOAD asd
 LOAD
-VPRINT
-VLOAD
 PRINT_BP
-ADD jam pfizer 65 15 Seoul
-ADD Jiwon Janssen 23 Seoul
-ADD jiwon Janssen 23 Seoul
-ADD Wang
-ADD Wang Janssen
-ADD Wang Janssen 12
-PRINT_BP
-ADD Tom Pfizer 38 Seoul
-ADD Tom Pfizer 38 Seoul
-ADD Won Janssen 20 Busan
-ADD Jin Janssen 15 Seoul
-ADD jam pfizer 65 15 Seoul
-ADD Ham Pfizer 65 Incheon
-ADD Bobby Moderna 20 Seoul
-ADD Teddy AstraZeneca 19 Incheon
-ADD Bob Janssen 48 Daegu
-ADD Ann Janssen 21 Seoul
+ADD jam Pfizer 65 15 Seoul
+PRINT_BP sad
 ADD Ami Janssen 25 Seoul
 ADD Jinks Janssen 21 Seoul
 ADD Set Janssen 30 Seoul
@@ -42,17 +26,4 @@ SEARCH_BP Teddy
 SEARCH_BP Tom
 SEARCH_BP Jin
 SEARCH_BP Minsun
-VPRINT A
-VPRINT B
-VLOAD
-VPRINT A
-VPRINT B
 PRINT_BP
-SEARCH_BP
-SEARCH_BP E J
-SEARCH_BP A Z
-SEARCH_BP a z
-SEARCH_BP Ea Jo
-SEARCH_BP Z A
-SEARCH_BP A z
-EXIT

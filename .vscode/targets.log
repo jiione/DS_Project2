@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Nov  8 13:58:06 2021
+# Make data base, printed on Mon Nov  8 19:42:42 2021
 
 # Variables
 
@@ -15,7 +15,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -33,7 +33,7 @@ CURDIR := /home/user/DS_Project_2_2021_2
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"a84c08975c8b2fe92a418936503496c8.ko","_translationsConfigFile":"/home/user/.vscode-server/data/clp/a84c08975c8b2fe92a418936503496c8.ko/tcf.json","_cacheRoot":"/home/user/.vscode-server/data/clp/a84c08975c8b2fe92a418936503496c8.ko","_resolvedLanguagePackCoreLocation":"/home/user/.vscode-server/data/clp/a84c08975c8b2fe92a418936503496c8.ko/b3318bc0524af3d74034b8bb8a64df0ccf35549a","_corruptedFile":"/home/user/.vscode-server/data/clp/a84c08975c8b2fe92a418936503496c8.ko/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"c4d7d404e4e4f4ab955e0f8a4aa51201.ko","_translationsConfigFile":"/home/user/.vscode-server/data/clp/c4d7d404e4e4f4ab955e0f8a4aa51201.ko/tcf.json","_cacheRoot":"/home/user/.vscode-server/data/clp/c4d7d404e4e4f4ab955e0f8a4aa51201.ko","_resolvedLanguagePackCoreLocation":"/home/user/.vscode-server/data/clp/c4d7d404e4e4f4ab955e0f8a4aa51201.ko/b3318bc0524af3d74034b8bb8a64df0ccf35549a","_corruptedFile":"/home/user/.vscode-server/data/clp/c4d7d404e4e4f4ab955e0f8a4aa51201.ko/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /home/user/.vscode-server/bin/b3318bc0524af3d74034b8bb8a64df0ccf35549a/node
 # makefile (from 'Makefile', line 1)
@@ -56,8 +56,6 @@ PATH = /home/user/.vscode-server/bin/b3318bc0524af3d74034b8bb8a64df0ccf35549a/bi
 VSCODE_LOG_STACK = false
 # makefile (from 'Makefile', line 4)
 FLAG = -std=c++11 -g
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/USER/AppData/Local/Temp/vscode-remote-wsl/b3318bc0524af3d74034b8bb8a64df0ccf35549a/vscode-server-stable-linux-x64.tar.gz
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -69,9 +67,9 @@ VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/user/DS_Project_2_2021_2
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ed03eb5a-a507-4172-b058-6ab1e215c0a0.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-277fa148-5ee4-487b-974c-5eff4050642c.sock
 # environment
-WSL_INTEROP = /run/WSL/8_interop
+WSL_INTEROP = /run/WSL/11_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/server/remoteExtensionHostProcess
 # environment
@@ -155,7 +153,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu-18.04
 # variable set hash-table stats:
-# Load=72/1024=7%, Rehash=0, Collisions=3/104=3%
+# Load=71/1024=7%, Rehash=0, Collisions=3/103=3%
 
 # Pattern-specific Variable Values
 
@@ -252,7 +250,7 @@ AVLNode.h:
 # Not a target:
 BpTree.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-05 21:03:57.1089303
+#  Last modified 2021-11-08 16:39:56.6550456
 #  File has been updated.
 #  Successfully updated.
 
@@ -272,15 +270,15 @@ Manager.h:
 # Not a target:
 BpTreeDataNode.h:
 #  Implicit rule search has been done.
- 
 #  Last modified 2021-11-04 21:49:28.5717045
 #  File has been updated.
 #  Successfully updated.
 
+ 
 # Not a target:
 Manager.cpp:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-05 23:17:56.7689303
+#  Last modified 2021-11-08 19:15:43.0850456
 #  File has been updated.
 #  Successfully updated.
 
@@ -319,6 +317,6 @@ AVLTree.cpp:
 # strcache performance: lookups = 46 / hit rate = 41%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=1/46=2%
-# Finished Make data base on Mon Nov  8 13:58:06 2021
+# Finished Make data base on Mon Nov  8 19:42:42 2021
 
  
