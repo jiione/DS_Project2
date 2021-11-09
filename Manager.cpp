@@ -156,6 +156,10 @@ void Manager::run(const char* command_txt) {
 			printSuccess("EXIT");//print success code
 			return;
 		}
+		else
+		{
+			printErrorCode(800);
+		}
 	}
 
 }
@@ -456,6 +460,10 @@ bool Manager::VPRINT(string type_) {//print all Data of Vector
 		{
 			fout<<Print_vector[i]->GetUserName()<<" "<<Print_vector[i]->GetVaccineName()<<" "<<Print_vector[i]->GetTimes()<<" "<<Print_vector[i]->GetAge()<<" "<<Print_vector[i]->GetLocationName()<<endl;
 		}		
+	}
+	else
+	{
+		return false;
 	}
     fout << "============================" << endl << endl;
 	fout.close();

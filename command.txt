@@ -1,29 +1,7 @@
-LOAD asd
-LOAD
-PRINT_BP
-ADD jam Pfizer 65 15 Seoul
-PRINT_BP sad
-ADD Ami Janssen 25 Seoul
-ADD Jinks Janssen 21 Seoul
-ADD Set Janssen 30 Seoul
-ADD Geng Janssen 21 Seoul
-ADD Yumi Janssen 29 Seoul
-ADD Garen Janssen 29 Seoul
-ADD Kamil Janssen 30 Seoul
-ADD Lux Janssen 22 Seoul
-ADD Vi Janssen 14 Seoul
-ADD Ari Janssen 34 Seoul
-ADD Nidali Janssen 50 Seoul
-SEARCH_BP Bobby
-SEARCH_BP Denny
-SEARCH_BP Elsa
-SEARCH_BP Emily
-SEARCH_BP Eric
-SEARCH_BP Erin
-SEARCH_BP Jiwon
-SEARCH_BP John
-SEARCH_BP Teddy
-SEARCH_BP Tom
-SEARCH_BP Jin
-SEARCH_BP Minsun
-PRINT_BP
+ADD f Janssen 20 Seoul
+ADD d Janssen 21 Seoul
+ADD a Janssen 22 Seoul
+VLOAD
+SEARCH_AVL f
+SEARCH_AVL d
+SEARCH_AVL a

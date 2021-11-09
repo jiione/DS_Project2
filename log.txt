@@ -1,153 +1,28 @@
-========== ERROR ==========
-100
-===========================
+========== ADD ==========
+f Janssen 20 Seoul
+============================
 
-========== LOAD ==========
+========== ADD ==========
+d Janssen 21 Seoul
+============================
+
+========== ADD ==========
+a Janssen 22 Seoul
+============================
+
+========== VLOAD ==========
 Success
 ============================
 
-========== PRINT_BP ==========
-Bobby Moderna 1 20 Seoul
-Denny Pfizer 0 32 Gyeonggi
-Elsa Janssen 0 49 Busan
-Emily Moderna 0 21 Incheon
-Eric Janssen 0 30 Busan
-Erin AstraZeneca 0 51 Daegu
-John Pfizer 1 17 Seoul
-Min Moderna 0 18 Seoul
-Pig Pfizer 0 20 Seoul
-Sun Pfizer 1 34 Seoul
-Teddy AstraZeneca 1 19 Incheon
-Tom Pfizer 1 38 Seoul
-Tomi Pfizer 0 34 Incheon
-Yun Moderna 1 29 Seoul
+========== PRINT_AVL ==========
+f Janssen 1 20 Seoul
 ============================
 
-========== ERROR ==========
-300
-===========================
-
-========== ERROR ==========
-700
-===========================
-
-========== ADD ==========
-Ami Janssen 25 Seoul
+========== PRINT_AVL ==========
+d Janssen 1 21 Seoul
 ============================
 
-========== ADD ==========
-Jinks Janssen 21 Seoul
-============================
-
-========== ADD ==========
-Set Janssen 30 Seoul
-============================
-
-========== ADD ==========
-Geng Janssen 21 Seoul
-============================
-
-========== ADD ==========
-Yumi Janssen 29 Seoul
-============================
-
-========== ADD ==========
-Garen Janssen 29 Seoul
-============================
-
-========== ADD ==========
-Kamil Janssen 30 Seoul
-============================
-
-========== ADD ==========
-Lux Janssen 22 Seoul
-============================
-
-========== ADD ==========
-Vi Janssen 14 Seoul
-============================
-
-========== ADD ==========
-Ari Janssen 34 Seoul
-============================
-
-========== ADD ==========
-Nidali Janssen 50 Seoul
-============================
-
-========== SEARCH_BP ==========
-Bobby Moderna 1 20 Seoul
-============================
-
-========== SEARCH_BP ==========
-Denny Pfizer 0 32 Gyeonggi
-============================
-
-========== SEARCH_BP ==========
-Elsa Janssen 0 49 Busan
-============================
-
-========== SEARCH_BP ==========
-Emily Moderna 0 21 Incheon
-============================
-
-========== SEARCH_BP ==========
-Eric Janssen 0 30 Busan
-============================
-
-========== SEARCH_BP ==========
-Erin AstraZeneca 0 51 Daegu
-============================
-
-========== ERROR ==========
-400
-===========================
-
-========== SEARCH_BP ==========
-John Pfizer 1 17 Seoul
-============================
-
-========== SEARCH_BP ==========
-Teddy AstraZeneca 1 19 Incheon
-============================
-
-========== SEARCH_BP ==========
-Tom Pfizer 1 38 Seoul
-============================
-
-========== ERROR ==========
-400
-===========================
-
-========== ERROR ==========
-400
-===========================
-
-========== PRINT_BP ==========
-Ami Janssen 1 25 Seoul
-Ari Janssen 1 34 Seoul
-Bobby Moderna 1 20 Seoul
-Denny Pfizer 0 32 Gyeonggi
-Elsa Janssen 0 49 Busan
-Emily Moderna 0 21 Incheon
-Eric Janssen 0 30 Busan
-Erin AstraZeneca 0 51 Daegu
-Garen Janssen 1 29 Seoul
-Geng Janssen 1 21 Seoul
-Jinks Janssen 1 21 Seoul
-John Pfizer 1 17 Seoul
-Kamil Janssen 1 30 Seoul
-Lux Janssen 1 22 Seoul
-Min Moderna 0 18 Seoul
-Nidali Janssen 1 50 Seoul
-Pig Pfizer 0 20 Seoul
-Set Janssen 1 30 Seoul
-Sun Pfizer 1 34 Seoul
-Teddy AstraZeneca 1 19 Incheon
-Tom Pfizer 1 38 Seoul
-Tomi Pfizer 0 34 Incheon
-Vi Janssen 1 14 Seoul
-Yumi Janssen 1 29 Seoul
-Yun Moderna 1 29 Seoul
+========== PRINT_AVL ==========
+a Janssen 1 22 Seoul
 ============================
 

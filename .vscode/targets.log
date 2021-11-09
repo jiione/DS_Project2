@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Nov  8 19:42:42 2021
+# Make data base, printed on Tue Nov  9 12:36:14 2021
 
 # Variables
 
@@ -67,7 +67,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/user/DS_Project_2_2021_2
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-277fa148-5ee4-487b-974c-5eff4050642c.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-8f3bcad4-209c-42b5-9b71-c1f068caef89.sock
 # environment
 WSL_INTEROP = /run/WSL/11_interop
 # environment
@@ -271,10 +271,10 @@ Manager.h:
 BpTreeDataNode.h:
 #  Implicit rule search has been done.
 #  Last modified 2021-11-04 21:49:28.5717045
+ 
 #  File has been updated.
 #  Successfully updated.
 
- 
 # Not a target:
 Manager.cpp:
 #  Implicit rule search has been done.
@@ -317,6 +317,6 @@ AVLTree.cpp:
 # strcache performance: lookups = 46 / hit rate = 41%
 # hash-table stats:
 # Load=27/8192=0%, Rehash=0, Collisions=1/46=2%
-# Finished Make data base on Mon Nov  8 19:42:42 2021
+# Finished Make data base on Tue Nov  9 12:36:14 2021
 
  
