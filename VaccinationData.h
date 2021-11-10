@@ -24,8 +24,9 @@ private:
 
 public:
 	VaccinationData() {
-		LocationName = "";
-		UserName = "";
+ 		UserName="";
+		VaccineName="";
+		LocationName="";
 		times = 0;
 	}
 	~VaccinationData() {

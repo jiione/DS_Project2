@@ -1,28 +1,75 @@
-========== ADD ==========
-f Janssen 20 Seoul
+========== LOAD ==========
+Success
 ============================
 
 ========== ADD ==========
-d Janssen 21 Seoul
+Tom Pfizer 38 Seoul
 ============================
 
 ========== ADD ==========
-a Janssen 22 Seoul
+John Pfizer 17 Seoul
+============================
+
+========== ADD ==========
+Jiwon Janssen 23 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== SEARCH_BP ==========
+Jiwon Janssen 1 23 Seoul
+============================
+
+========== SEARCH_BP ==========
+Cartier Pfizer 0 11 Jeju
+Chanel Moderna 0 38 Daejeon
+Denny Pfizer 0 32 Gyeonggi
+Edward Pfizer 0 98 Busan
+Emily Moderna 0 21 Incheon
+Erin AstraZeneca 0 51 Daegu
+Gucci AstraZeneca 1 43 Ulsan
+Happy Moderna 1 23 Gwangju
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+============================
+
+========== PRINT_AVL ==========
+Jiwon Janssen 1 23 Seoul
 ============================
 
 ========== VLOAD ==========
 Success
 ============================
 
-========== PRINT_AVL ==========
-f Janssen 1 20 Seoul
+========== VPRINT A ==========
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+Tom Pfizer 2 38 Seoul
 ============================
 
-========== PRINT_AVL ==========
-d Janssen 1 21 Seoul
+========== VPRINT B ==========
+Tom Pfizer 2 38 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
 ============================
 
-========== PRINT_AVL ==========
-a Janssen 1 22 Seoul
+========== PRINT_BP ==========
+Cartier Pfizer 0 11 Jeju
+Chanel Moderna 0 38 Daejeon
+Denny Pfizer 0 32 Gyeonggi
+Edward Pfizer 0 98 Busan
+Emily Moderna 0 21 Incheon
+Erin AstraZeneca 0 51 Daegu
+Gucci AstraZeneca 1 43 Ulsan
+Happy Moderna 1 23 Gwangju
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+Tom Pfizer 2 38 Seoul
+============================
+
+========== EXIT ==========
+Success
 ============================
 

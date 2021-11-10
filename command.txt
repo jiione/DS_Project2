@@ -1,7 +1,13 @@
-ADD f Janssen 20 Seoul
-ADD d Janssen 21 Seoul
-ADD a Janssen 22 Seoul
+LOAD
+ADD Tom Pfizer 38 Seoul
+ADD John Pfizer 17 Seoul
+ADD Jiwon Janssen 23 Seoul
+ADD Jiwon Janssen 23 Seoul
+SEARCH_BP Jiwon
+SEARCH_BP C J
+SEARCH_AVL Jiwon
 VLOAD
-SEARCH_AVL f
-SEARCH_AVL d
-SEARCH_AVL a
+VPRINT A
+VPRINT B
+PRINT_BP
+EXIT

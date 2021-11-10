@@ -8,3 +8,4 @@ Edward Pfizer 0 98 Busan
 Gucci AstraZeneca 1 43 Ulsan
 Chanel Moderna 0 38 Daejeon
 Cartier Pfizer 0 11 Jeju
+

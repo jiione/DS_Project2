@@ -187,9 +187,13 @@ bool Manager::LOAD() {
 	while(!fdata.eof())//read "input_data.txt" line by line
 	{
 		fdata.getline(d_line,100);
-		VaccinationData* VData=new VaccinationData;//Create new Vacciantion data
 		/*Set Data's information*/
 		char* d_tmp=strtok(d_line," ");
+		if(d_tmp==NULL)
+		{
+			continue;
+		}
+		VaccinationData* VData=new VaccinationData;//Create new Vacciantion data
 		VData->SetUserName(d_tmp);
 		d_tmp= strtok(NULL," ");
 		VData->SetVaccineName(d_tmp);
