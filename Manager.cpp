@@ -12,7 +12,7 @@ void Manager::run(const char* command_txt) {
 	ifstream fin;
 	ofstream flog;
 	fin.open(command_txt);// Open "Command.txt"
-    flog.open("log.txt", ios::app);//Open "log.txt"
+    flog.open("log.txt");//Open "log.txt"
     if (!fin) // if fail to open "Command.txt"
     {
         flog << "File Open Error" << endl; //Print Error code
