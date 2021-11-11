@@ -23,19 +23,16 @@ Jiwon Janssen 1 23 Seoul
 ============================
 
 ========== SEARCH_BP ==========
-Cartier Pfizer 0 11 Jeju
-Chanel Moderna 0 38 Daejeon
 Denny Pfizer 0 32 Gyeonggi
 Edward Pfizer 0 98 Busan
 Emily Moderna 0 21 Incheon
 Erin AstraZeneca 0 51 Daegu
-Gucci AstraZeneca 1 43 Ulsan
 Happy Moderna 1 23 Gwangju
 Jiwon Janssen 1 23 Seoul
 John Pfizer 2 17 Seoul
 ============================
 
-========== PRINT_AVL ==========
+========== SEARCH_AVL ==========
 Jiwon Janssen 1 23 Seoul
 ============================
 
@@ -56,17 +53,89 @@ John Pfizer 2 17 Seoul
 ============================
 
 ========== PRINT_BP ==========
-Cartier Pfizer 0 11 Jeju
-Chanel Moderna 0 38 Daejeon
 Denny Pfizer 0 32 Gyeonggi
 Edward Pfizer 0 98 Busan
 Emily Moderna 0 21 Incheon
 Erin AstraZeneca 0 51 Daegu
-Gucci AstraZeneca 1 43 Ulsan
 Happy Moderna 1 23 Gwangju
 Jiwon Janssen 1 23 Seoul
 John Pfizer 2 17 Seoul
+Min Moderna 0 38 Daejeon
+Sun AstraZeneca 1 43 Ulsan
 Tom Pfizer 2 38 Seoul
+Yun Pfizer 0 11 Jeju
+============================
+
+========== EXIT ==========
+Success
+============================
+
+========== LOAD ==========
+Success
+============================
+
+========== ADD ==========
+Tom Pfizer 38 Seoul
+============================
+
+========== ADD ==========
+John Pfizer 17 Seoul
+============================
+
+========== ADD ==========
+Jiwon Janssen 23 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== SEARCH_BP ==========
+Jiwon Janssen 1 23 Seoul
+============================
+
+========== SEARCH_BP ==========
+Denny Pfizer 0 32 Gyeonggi
+Edward Pfizer 0 98 Busan
+Emily Moderna 0 21 Incheon
+Erin AstraZeneca 0 51 Daegu
+Happy Moderna 1 23 Gwangju
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+============================
+
+========== SEARCH_AVL ==========
+Jiwon Janssen 1 23 Seoul
+============================
+
+========== VLOAD ==========
+Success
+============================
+
+========== VPRINT A ==========
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+Tom Pfizer 2 38 Seoul
+============================
+
+========== VPRINT B ==========
+Tom Pfizer 2 38 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+============================
+
+========== PRINT_BP ==========
+Denny Pfizer 0 32 Gyeonggi
+Edward Pfizer 0 98 Busan
+Emily Moderna 0 21 Incheon
+Erin AstraZeneca 0 51 Daegu
+Happy Moderna 1 23 Gwangju
+Jiwon Janssen 1 23 Seoul
+John Pfizer 2 17 Seoul
+Min Moderna 0 38 Daejeon
+Sun AstraZeneca 1 43 Ulsan
+Tom Pfizer 2 38 Seoul
+Yun Pfizer 0 11 Jeju
 ============================
 
 ========== EXIT ==========

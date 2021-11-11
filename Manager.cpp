@@ -329,7 +329,7 @@ bool Manager::SEARCH_AVL(string name) {//Find the data in the tree with name
 	}
 	ofstream fout;
 	fout.open("log.txt", ofstream::app);
-    fout << "========== " << "PRINT_AVL" << " ==========" << endl;
+    fout << "========== " << "SEARCH_AVL" << " ==========" << endl;
     fout << v->GetUserName()<<" "<<v->GetVaccineName()<<" "<<v->GetTimes()<<" "<<v->GetAge()<<" "<<v->GetLocationName()<<endl;//print information of data to find
     fout << "============================" << endl << endl;
 	fout.close();

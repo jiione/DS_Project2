@@ -5,7 +5,7 @@ John Pfizer 1 17 Seoul
 Erin AstraZeneca 0 51 Daegu
 Happy Moderna 1 23 Gwangju
 Edward Pfizer 0 98 Busan
-Gucci AstraZeneca 1 43 Ulsan
-Chanel Moderna 0 38 Daejeon
-Cartier Pfizer 0 11 Jeju
+Sun AstraZeneca 1 43 Ulsan
+Min Moderna 0 38 Daejeon
+Yun Pfizer 0 11 Jeju
 

@@ -20,16 +20,16 @@ public:
 	}
 	~BpTree();
 
-	bool		isEmpty(){return root==NULL;}
-	bool		Insert(VaccinationData* newData);//for Load,Add
-	bool		exceedDataNode(BpTreeNode* pDataNode);//Load
-	bool		exceedIndexNode(BpTreeNode* pIndexNode);//Load
-	void		splitDataNode(BpTreeNode* pDataNode);//Load
-	void		splitIndexNode(BpTreeNode* pIndexNode);//Load
-	BpTreeNode*	searchDataNode(string n); //search VaccinationData node Search Bp
-	void	SearchRange(string start, string end);//
-	void	Print(); // print all
-	bool CheckRange(BpTreeNode* node,string start,string end);
+	bool		isEmpty(){return root==NULL;}//is Empty tree?
+	bool		Insert(VaccinationData* newData);//insert Data in B+Tree
+	bool		exceedDataNode(BpTreeNode* pDataNode);//if exceed Data Node, return true
+	bool		exceedIndexNode(BpTreeNode* pIndexNode);//if exceed Index Node, return true
+	void		splitDataNode(BpTreeNode* pDataNode);//if exceed Data Node, split node
+	void		splitIndexNode(BpTreeNode* pIndexNode);//if exceed Index Node, split node
+	BpTreeNode*	searchDataNode(string n); //Search data Node by name and return the node
+	void	SearchRange(string start, string end);//Find the data within the range
+	void	Print(); // print all data of tree
+	bool CheckRange(BpTreeNode* node,string start,string end);//Check if there is data in the range
 
 };
 
