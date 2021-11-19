@@ -1,0 +1,395 @@
+========== LOAD ==========
+Success
+============================
+
+========== ERROR ==========
+600
+===========================
+
+========== ERROR ==========
+200
+===========================
+
+========== PRINT_BP ==========
+Bobby Moderna 1 20 Seoul
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+John Pfizer 1 17 Seoul
+Min Moderna 0 18 Seoul
+Pig Pfizer 0 20 Seoul
+Sun Pfizer 1 34 Seoul
+Teddy AstraZeneca 1 19 Incheon
+Tom Pfizer 1 38 Seoul
+Tomi Pfizer 0 34 Incheon
+Yun Moderna 1 29 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== ADD ==========
+Jiwon Janssen 23 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== ERROR ==========
+300
+===========================
+
+========== ERROR ==========
+300
+===========================
+
+========== ERROR ==========
+300
+===========================
+
+========== PRINT_BP ==========
+Bobby Moderna 1 20 Seoul
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+Jiwon Janssen 1 23 Seoul
+John Pfizer 1 17 Seoul
+Min Moderna 0 18 Seoul
+Pig Pfizer 0 20 Seoul
+Sun Pfizer 1 34 Seoul
+Teddy AstraZeneca 1 19 Incheon
+Tom Pfizer 1 38 Seoul
+Tomi Pfizer 0 34 Incheon
+Yun Moderna 1 29 Seoul
+============================
+
+========== ADD ==========
+Tom Pfizer 38 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== ADD ==========
+Won Janssen 20 Busan
+============================
+
+========== ADD ==========
+Jin Janssen 15 Seoul
+============================
+
+========== ERROR ==========
+300
+===========================
+
+========== ADD ==========
+Ham Pfizer 65 Incheon
+============================
+
+========== ADD ==========
+Bobby Moderna 20 Seoul
+============================
+
+========== ADD ==========
+Teddy AstraZeneca 19 Incheon
+============================
+
+========== ADD ==========
+Bob Janssen 48 Daegu
+============================
+
+========== ADD ==========
+Ann Janssen 21 Seoul
+============================
+
+========== ADD ==========
+Ami Janssen 25 Seoul
+============================
+
+========== ADD ==========
+Jinks Janssen 21 Seoul
+============================
+
+========== ADD ==========
+Set Janssen 30 Seoul
+============================
+
+========== ADD ==========
+Geng Janssen 21 Seoul
+============================
+
+========== ADD ==========
+Yumi Janssen 29 Seoul
+============================
+
+========== ADD ==========
+Garen Janssen 29 Seoul
+============================
+
+========== ADD ==========
+Kamil Janssen 30 Seoul
+============================
+
+========== ADD ==========
+Lux Janssen 22 Seoul
+============================
+
+========== ADD ==========
+Vi Janssen 14 Seoul
+============================
+
+========== ADD ==========
+Ari Janssen 34 Seoul
+============================
+
+========== ADD ==========
+Nidali Janssen 50 Seoul
+============================
+
+========== SEARCH_BP ==========
+Bobby Moderna 2 20 Seoul
+============================
+
+========== SEARCH_BP ==========
+Denny Pfizer 0 32 Gyeonggi
+============================
+
+========== SEARCH_BP ==========
+Elsa Janssen 0 49 Busan
+============================
+
+========== SEARCH_BP ==========
+Emily Moderna 0 21 Incheon
+============================
+
+========== SEARCH_BP ==========
+Eric Janssen 0 30 Busan
+============================
+
+========== SEARCH_BP ==========
+Erin AstraZeneca 0 51 Daegu
+============================
+
+========== SEARCH_BP ==========
+Jiwon Janssen 1 23 Seoul
+============================
+
+========== SEARCH_BP ==========
+John Pfizer 1 17 Seoul
+============================
+
+========== SEARCH_BP ==========
+Teddy AstraZeneca 2 19 Incheon
+============================
+
+========== SEARCH_BP ==========
+Tom Pfizer 2 38 Seoul
+============================
+
+========== SEARCH_BP ==========
+Jin Janssen 1 15 Seoul
+============================
+
+========== ERROR ==========
+400
+===========================
+
+========== ERROR ==========
+600
+===========================
+
+========== ERROR ==========
+600
+===========================
+
+========== VLOAD ==========
+Success
+============================
+
+========== VPRINT A ==========
+Teddy AstraZeneca 2 19 Incheon
+Vi Janssen 1 14 Seoul
+Jin Janssen 1 15 Seoul
+Won Janssen 1 20 Busan
+Ann Janssen 1 21 Seoul
+Geng Janssen 1 21 Seoul
+Jinks Janssen 1 21 Seoul
+Lux Janssen 1 22 Seoul
+Jiwon Janssen 1 23 Seoul
+Ami Janssen 1 25 Seoul
+Garen Janssen 1 29 Seoul
+Yumi Janssen 1 29 Seoul
+Kamil Janssen 1 30 Seoul
+Set Janssen 1 30 Seoul
+Ari Janssen 1 34 Seoul
+Bob Janssen 1 48 Daegu
+Nidali Janssen 1 50 Seoul
+Bobby Moderna 2 20 Seoul
+Tom Pfizer 2 38 Seoul
+============================
+
+========== VPRINT B ==========
+Won Janssen 1 20 Busan
+Bob Janssen 1 48 Daegu
+Teddy AstraZeneca 2 19 Incheon
+Nidali Janssen 1 50 Seoul
+Tom Pfizer 2 38 Seoul
+Ari Janssen 1 34 Seoul
+Kamil Janssen 1 30 Seoul
+Set Janssen 1 30 Seoul
+Garen Janssen 1 29 Seoul
+Yumi Janssen 1 29 Seoul
+Ami Janssen 1 25 Seoul
+Jiwon Janssen 1 23 Seoul
+Lux Janssen 1 22 Seoul
+Ann Janssen 1 21 Seoul
+Geng Janssen 1 21 Seoul
+Jinks Janssen 1 21 Seoul
+Bobby Moderna 2 20 Seoul
+Jin Janssen 1 15 Seoul
+Vi Janssen 1 14 Seoul
+============================
+
+========== PRINT_BP ==========
+Ami Janssen 1 25 Seoul
+Ann Janssen 1 21 Seoul
+Ari Janssen 1 34 Seoul
+Bob Janssen 1 48 Daegu
+Bobby Moderna 2 20 Seoul
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+Garen Janssen 1 29 Seoul
+Geng Janssen 1 21 Seoul
+Ham Pfizer 1 65 Incheon
+Jin Janssen 1 15 Seoul
+Jinks Janssen 1 21 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 1 17 Seoul
+Kamil Janssen 1 30 Seoul
+Lux Janssen 1 22 Seoul
+Min Moderna 0 18 Seoul
+Nidali Janssen 1 50 Seoul
+Pig Pfizer 0 20 Seoul
+Set Janssen 1 30 Seoul
+Sun Pfizer 1 34 Seoul
+Teddy AstraZeneca 2 19 Incheon
+Tom Pfizer 2 38 Seoul
+Tomi Pfizer 0 34 Incheon
+Vi Janssen 1 14 Seoul
+Won Janssen 1 20 Busan
+Yumi Janssen 1 29 Seoul
+Yun Moderna 1 29 Seoul
+============================
+
+========== ERROR ==========
+400
+===========================
+
+========== SEARCH_BP ==========
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+Garen Janssen 1 29 Seoul
+Geng Janssen 1 21 Seoul
+Ham Pfizer 1 65 Incheon
+Jin Janssen 1 15 Seoul
+Jinks Janssen 1 21 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 1 17 Seoul
+============================
+
+========== SEARCH_BP ==========
+Ami Janssen 1 25 Seoul
+Ann Janssen 1 21 Seoul
+Ari Janssen 1 34 Seoul
+Bob Janssen 1 48 Daegu
+Bobby Moderna 2 20 Seoul
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+Garen Janssen 1 29 Seoul
+Geng Janssen 1 21 Seoul
+Ham Pfizer 1 65 Incheon
+Jin Janssen 1 15 Seoul
+Jinks Janssen 1 21 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 1 17 Seoul
+Kamil Janssen 1 30 Seoul
+Lux Janssen 1 22 Seoul
+Min Moderna 0 18 Seoul
+Nidali Janssen 1 50 Seoul
+Pig Pfizer 0 20 Seoul
+Set Janssen 1 30 Seoul
+Sun Pfizer 1 34 Seoul
+Teddy AstraZeneca 2 19 Incheon
+Tom Pfizer 2 38 Seoul
+Tomi Pfizer 0 34 Incheon
+Vi Janssen 1 14 Seoul
+Won Janssen 1 20 Busan
+Yumi Janssen 1 29 Seoul
+Yun Moderna 1 29 Seoul
+============================
+
+========== ERROR ==========
+400
+===========================
+
+========== ERROR ==========
+400
+===========================
+
+========== ERROR ==========
+400
+===========================
+
+========== SEARCH_BP ==========
+Ami Janssen 1 25 Seoul
+Ann Janssen 1 21 Seoul
+Ari Janssen 1 34 Seoul
+Bob Janssen 1 48 Daegu
+Bobby Moderna 2 20 Seoul
+Denny Pfizer 0 32 Gyeonggi
+Elsa Janssen 0 49 Busan
+Emily Moderna 0 21 Incheon
+Eric Janssen 0 30 Busan
+Erin AstraZeneca 0 51 Daegu
+Garen Janssen 1 29 Seoul
+Geng Janssen 1 21 Seoul
+Ham Pfizer 1 65 Incheon
+Jin Janssen 1 15 Seoul
+Jinks Janssen 1 21 Seoul
+Jiwon Janssen 1 23 Seoul
+John Pfizer 1 17 Seoul
+Kamil Janssen 1 30 Seoul
+Lux Janssen 1 22 Seoul
+Min Moderna 0 18 Seoul
+Nidali Janssen 1 50 Seoul
+Pig Pfizer 0 20 Seoul
+Set Janssen 1 30 Seoul
+Sun Pfizer 1 34 Seoul
+Teddy AstraZeneca 2 19 Incheon
+Tom Pfizer 2 38 Seoul
+Tomi Pfizer 0 34 Incheon
+Vi Janssen 1 14 Seoul
+Won Janssen 1 20 Busan
+Yumi Janssen 1 29 Seoul
+Yun Moderna 1 29 Seoul
+============================
+
+========== EXIT ==========
+Success
+============================
+

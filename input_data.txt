@@ -1,0 +1,14 @@
+Denny Pfizer 0 32 Gyeonggi
+Tom Pfizer 1 38 Seoul
+Emily Moderna 0 21 Incheon
+John Pfizer 1 17 Seoul
+Erin AstraZeneca 0 51 Daegu
+Eric Janssen 0 30 Busan
+Elsa Janssen 0 49 Busan
+Bobby Moderna 1 20 Seoul
+Teddy AstraZeneca 1 19 Incheon
+Tomi Pfizer 0 34 Incheon
+Yun Moderna 1 29 Seoul
+Pig Pfizer 0 20 Seoul
+Min Moderna 0 18 Seoul
+Sun Pfizer 1 34 Seoul
